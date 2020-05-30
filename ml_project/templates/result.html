@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My first ml project</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+  </head>
+  <body>
+    <a href="{% url 'index' %}">Cilick to go back</a>
+    <h1>Result</h1>
+    <p>result is {{prediction}}</p>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My first ml project</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+  </head>
+  <body>
+    <h1>ml_project</h1>
+    <form  action="{% url 'result' %}">
+      {% csrf_token %}
+      pclass:<input type="text" name="pclass"><br>
+      age:<input type="text" name="age">
+      sibsp:<input type="text" name="sibsp"><br>
+      parch:<input type="text" name="parch">
+      fare:<input type="text" name="fare"><br>
+      male:<input type="text" name="male">
+      q:<input type="text" name="q"><br>
+      s:<input type="text" name="s">
+      <input type="submit" value="click">
+    </form>
+  </body>
+</html>
